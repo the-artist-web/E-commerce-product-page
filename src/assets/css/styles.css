@@ -1,0 +1,122 @@
+/*--------------------------------------------*\
+  #STYLE GYDE
+\*--------------------------------------------*/
+
+:root {
+    /**
+     * Colors
+     */
+
+    /* Primary */
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%); /* with 75% opacity for lightbox background */
+
+    /**
+     * Typography
+     */
+    
+    /* Body Copy */
+    --Font-size: 16px; /* paragraph */
+
+    /* Font Family */
+    --font-family: "Kumbh Sans", sans-serif;
+}
+
+
+
+
+
+/*--------------------------------------------*\
+  #RESET
+\*--------------------------------------------*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+button { display: block; }
+
+a {
+    color: var(--Very-dark-blue);
+    text-decoration: none;
+}
+
+img { height: auto; }
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--Light-grayish-blue);
+    font-family: var(--font-family);
+    color: var(--Very-dark-blue);
+    font-size: var(--Font-size);
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: bolder; }
+
+::selection {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track { background-color: var(--Grayish-blue); }
+
+::-webkit-scrollbar-thumb { background-color: var(--Dark-grayish-blue); }
+
+::-webkit-scrollbar-thumb:hover { background-color: var(--Very-dark-blue); }
+
+::-webkit-scrollbar-thumb:active { background-color: var(--Orange); }
+
+
+
+
+
+/*--------------------------------------------*\
+  #DUBLICATE ITEM
+\*--------------------------------------------*/
+
+.section { padding-block: 70px; }
+
+.container {
+    padding-inline: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
